@@ -438,6 +438,7 @@ class common extends BasicsCommon
             'status',
         ])
             ->where($where)
+            ->groupBy('status')
         // ->andwhere(['>=', 'start_time', strtotime(date("Y-m-d"), time())])
         // ->andwhere(['<=', 'start_time', strtotime(date('Y-m-d', strtotime('+1 day')))])
             ->asArray()
